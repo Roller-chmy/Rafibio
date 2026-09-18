@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bio Link - @raafy090</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background:
+        linear-gradient(
+          to bottom,
+          rgba(10, 10, 26, 0.75),
+          rgba(24, 9, 45, 0.85)
+        ),
+        url("https://i.ibb.co/3k8sX11/anime-city.jpg") center / cover no-repeat fixed !important;
+      background-color: #0d0f1d;
+      min-height: 100vh;
+      font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+      color: #ffffff;
+    }
+
+    .anime-card {
+      background: rgba(18, 16, 38, 0.75) !important;
+      backdrop-filter: blur(25px);
+      -webkit-backdrop-filter: blur(25px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      box-shadow: 0 0 35px rgba(168, 85, 247, 0.3);
+    }
+
+    .glow-avatar {
+      box-shadow: 0 0 25px #ec4899, 0 0 50px #8b5cf6;
+      animation: pulseGlow 3s infinite alternate;
+    }
+
+    @keyframes pulseGlow {
+      0% {
+        box-shadow: 0 0 20px #ec4899, 0 0 40px #8b5cf6;
+      }
+
+      100% {
+        box-shadow: 0 0 35px #3b82f6, 0 0 60px #ec4899;
+      }
+    }
+
+    .btn-ig {
+      background: linear-gradient(
+        135deg,
+        #f09433 0%,
+        #e6683c 25%,
+        #dc2743 50%,
+        #cc2366 75%,
+        #bc1888 100%
+      );
+      box-shadow: 0 4px 20px rgba(220, 39, 67, 0.5);
+      transition: all 0.3s ease;
+    }
+
+    .btn-ig:hover {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 8px 30px rgba(220, 39, 67, 0.8);
+    }
+
+    .btn-wa {
+      background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+      box-shadow: 0 4px 20px rgba(16, 185, 129, 0.5);
+      transition: all 0.3s ease;
+    }
+
+    .btn-wa:hover {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 8px 30px rgba(16, 185, 129, 0.8);
+    }
+
+    .btn-action {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      transition: all 0.2s ease;
+    }
+
+    .btn-action:hover {
+      background: rgba(255, 255, 255, 0.2);
+      border-color: rgba(255, 255, 255, 0.4);
+      transform: translateY(-2px);
+    }
+
+    .toast {
+      transform: translate(-50%, 30px);
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.3s ease;
+    }
+
+    .toast.show {
+      transform: translate(-50%, 0);
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body class="flex items-center justify-center p-4">
+  <main class="anime-card rounded-[32px] w-full max-w-md relative z-10 p-6 md:p-8 my-6">
+    <header class="flex flex-col items-center text-center mb-8">
+      <div class="relative mb-5">
+        <img
+          src="https://api.dicebear.com/7.x/bottts/svg?seed=raafy090"
+          alt="Foto profil anime"
+          class="glow-avatar w-28 h-28 rounded-full object-cover border-2 border-white/80 bg-slate-900"
+        />
+      </div>
+
+      <h1 class="text-3xl font-black tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-300 to-cyan-400 mb-1">
+        @raafy090
+      </h1>
+
+      <p class="text-xs text-slate-300 max-w-xs leading-relaxed font-medium">
+        Hubungi kami melalui WhatsApp atau ikuti Instagram resmi di bawah ini.
+      </p>
+
+      <div class="mt-4 inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/20 border border-emerald-400/40 text-emerald-300 text-xs font-semibold backdrop-blur-md">
+        <span class="relative flex h-2.5 w-2.5">
+          <span class="absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75 animate-ping"></span>
+          <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-400"></span>
+        </span>
+        Online / Ready to Chat
+      </div>
+    </header>
+
+    <section class="space-y-4 mb-8">
+      <a
+        href="https://www.instagram.com/raafy090?stkn=cjdobzBxcmdrNWJh"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-ig group w-full flex items-center justify-between rounded-2xl px-5 py-4 text-white font-bold tracking-wide active:scale-95"
+      >
+        <div class="flex items-center gap-3.5">
+          <div class="w-10 h-10 rounded-xl bg-white/20 backdrop-blur-sm flex items-center justify-center border border-white/20">
+            <i data-lucide="instagram" class="w-5 h-5"></i>
+          </div>
+          <span class="text-sm">Follow Instagram Kami</span>
+        </div>
+
+        <i data-lucide="arrow-right" class="w-5 h-5 opacity-80 transition-transform group-hover:translate-x-1.5"></i>
+      </a>
+
+      <a
+        href="https://wa.me/6289501293308?text=Halo,%20saya%20mau%20tanya-tanya"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-wa group w-full flex items-center justify-between rounded-2xl px-5 py-4 text-white font-bold tracking-wide active:scale-95"
+      >
+        <div class="flex items-center gap-3.5">
+          <div class="w-10 h-10 rounded-xl bg-white/20 backdrop-blur-sm flex items-center justify-center border border-white/20">
+            <i data-lucide="message-circle" class="w-5 h-5"></i>
+          </div>
+          <span class="text-sm">Chat via WhatsApp</span>
+        </div>
+
+        <i data-lucide="arrow-right" class="w-5 h-5 opacity-80 transition-transform group-hover:translate-x-1.5"></i>
+      </a>
+    </section>
+
+    <section class="grid grid-cols-3 gap-3 mb-8">
+      <button
+        type="button"
+        onclick="copyNumber()"
+        class="btn-action rounded-2xl p-3.5 text-slate-200 hover:text-white text-xs font-semibold flex flex-col items-center justify-center gap-2"
+      >
+        <i data-lucide="copy" class="w-4 h-4 text-cyan-400"></i>
+        <span>Salin WA</span>
+      </button>
+
+      <button
+        type="button"
+        onclick="toggleModal('qr-modal')"
+        class="btn-action rounded-2xl p-3.5 text-slate-200 hover:text-white text-xs font-semibold flex flex-col items-center justify-center gap-2"
+      >
+        <i data-lucide="qr-code" class="w-4 h-4 text-purple-400"></i>
+        <span>QR Code</span>
+      </button>
+
+      <button
+        type="button"
+        onclick="shareWebsite()"
+        class="btn-action rounded-2xl p-3.5 text-slate-200 hover:text-white text-xs font-semibold flex flex-col items-center justify-center gap-2"
+      >
+        <i data-lucide="share-2" class="w-4 h-4 text-pink-400"></i>
+        <span>Bagikan</span>
+      </button>
+    </section>
+
+    <footer class="text-center border-t border-white/10 pt-4">
+      <p class="text-[11px] text-slate-400 tracking-wider font-medium">
+        &copy; 2026 @raafy090. All rights reserved.
+      </p>
+    </footer>
+  </main>
+
+  <div
+    id="qr-modal"
+    class="fixed inset-0 bg-slate-950/85 backdrop-blur-md hidden items-center justify-center z-50 p-4"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="qr-title"
+  >
+    <div class="anime-card bg-slate-900/90 rounded-[28px] p-6 w-full max-w-xs relative border border-purple-500/40">
+      <button
+        type="button"
+        onclick="toggleModal('qr-modal')"
+        aria-label="Tutup modal"
+        class="absolute top-3.5 right-3.5 text-slate-400 hover:text-white bg-white/10 p-1.5 rounded-full"
+      >
+        <i data-lucide="x" class="w-4 h-4"></i>
+      </button>
+
+      <div class="text-center">
+        <h2 id="qr-title" class="text-lg font-bold mb-1 text-purple-300">
+          Scan QR Code
+        </h2>
+
+        <p class="text-xs text-slate-400 mb-4">
+          Pindai kamera HP untuk terhubung langsung ke WhatsApp.
+        </p>
+
+        <div class="bg-white p-3 rounded-2xl inline-flex shadow-xl">
+          <img
+            src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://wa.me/6289501293308"
+            alt="QR Code WhatsApp"
+            class="w-44 h-44"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    id="toast"
+    class="toast fixed bottom-6 left-1/2 bg-emerald-500 text-white px-5 py-3 rounded-full text-xs font-bold shadow-2xl z-50 flex items-center gap-2 border border-white/20"
+    role="status"
+    aria-live="polite"
+  >
+    <i data-lucide="check-circle-2" class="w-4 h-4"></i>
+    <span>Nomor WhatsApp berhasil disalin!</span>
+  </div>
+
+  <script>
+    lucide.createIcons();
+
+    const whatsappNumber = "089501293308";
+
+    function copyNumber() {
+      navigator.clipboard
+        .writeText(whatsappNumber)
+        .then(showToast)
+        .catch(() => {
+          alert("Gagal menyalin. Nomor WA: " + whatsappNumber);
+        });
+    }
+
+    function toggleModal(id) {
+      const modal = document.getElementById(id);
+
+      if (!modal) return;
+
+      modal.classList.toggle("hidden");
+      modal.classList.toggle("flex");
+    }
+
+    function shareWebsite() {
+      const shareData = {
+        title: "Bio Link @raafy090",
+        text: "Kunjungi bio link kami",
+        url: window.location.href
+      };
+
+      if (navigator.share) {
+        navigator.share(shareData).catch(() => {});
+        return;
+      }
+
+      navigator.clipboard
+        .writeText(window.location.href)
+        .then(() => {
+          alert("Link website berhasil disalin!");
+        })
+        .catch(() => {
+          alert("Link website: " + window.location.href);
+        });
+    }
+
+    function showToast() {
+      const toast = document.getElementById("toast");
+
+      toast.classList.add("show");
+
+      setTimeout(() => {
+        toast.classList.remove("show");
+      }, 2200);
+    }
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        const modal = document.getElementById("qr-modal");
+
+        if (!modal.classList.contains("hidden")) {
+          toggleModal("qr-modal");
+        }
+      }
+    });
+
+    document.getElementById("qr-modal").addEventListener("click", (event) => {
+      if (event.target.id === "qr-modal") {
+        toggleModal("qr-modal");
+      }
+    });
+  </script>
+</body>
+</html>
